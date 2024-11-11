@@ -47,3 +47,12 @@ Examples:
 * `npm run start -- --search="{*} == 'Wrath'" --columns=Name_Lang_enUS Spell` it will search all spells with a name that is strict equal to **Wrath**
 
 NOTE: this is a runtime eval, it means that you can even use more advanced conditions using any compatible method available in javascript.
+
+## Extract To SQL For Import
+
+To extract all dbcs to json
+`./go.sh`
+
+To generate and execute sql insert statements, assuming on localhost as root on default settings
+`./python convert.py --password PASSWORD`
+
